@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'poppins' sans-serif;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    width: 200px;
+    height: 50px;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .headerbtn a{
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+}
+.headerbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .sp1{
+    font-size: 30px;
+    color: rgba(153, 153, 153, 0.2);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+header .headerbtn .fa-user-circle{
+    color: #d70f64;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+}
+.loginbtn{
+    font-size: 12px;
+    color: #000;
+}
+header .headerbtn .signupbtn{
+    color: #d70f64;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./images/hero-city-foodpanda.webp);
+    background-size: 70%;
+    background-position: 220%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 2%;
+    z-index: -1;
+}
+.banner h2{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    font-size: 2.7em;
+    color: #333;
+    font-weight: 300;
+}
+.banner h2 b{
+    font-weight: 600;
+}
+.banner p{
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    font-size: 1.1em;
+    color: rgba(51, 51, 51, 0.712);
+    font-weight: 250;
+}
+.banner .searchrestaurent{
+    width: 60%;
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    padding: 15px;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner .searchrestaurent .textbox{
+    padding: 15px 25px;
+    width: 68%;
+    border-radius: 5px;
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    outline: none;
+}
+.banner .searchrestaurent .textbox:focus{
+    border: 1px solid #d70f64;
+}
+.banner .searchrestaurent .textbox::placeholder{
+    font-size: 1.1em;
+    color: rgb(148, 145, 145);
+    font-weight: 300;
+}
+.banner .searchrestaurent .bannerbtn button{
+    background-color: #d70f64;
+    padding: 20px 50px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.banner .searchrestaurent .bannerbtn span{
+    font-weight: 300;
+    color: #999;
+}
+.abouttitle{
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+.abouttitle::before{
+    content: "Partners";
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.2);
+    font-weight: 700;
+    z-index: -1;
+}
+.abouttitle h2{
+    font-weight: 200;
+    font-size: 1.8em;
+    z-index: 0;
+}
+.restauranttitle{
+    position: relative;
+}
+.restauranttitle h2{
+    position: absolute;
+    left: 10%;
+}
+.restaurant{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+.restaurant .restaurantcontent{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 110px;
+    top: 50px;
+}
+.restaurant .restaurantcontent .restauranttext{
+    width: 300px;
+    height: 250px;
+}
+.restaurant .restaurantcontent .restaurantimg{
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+}
+.restaurant .restaurantcontent .restauranttext .title{
+    padding-top: 10px;
+}
+.restaurant .restaurantcontent .restauranttext .title h2{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.restaurant .restaurantcontent .restauranttext .title p{
+    font-size: 14px;
+    color: #555;
+    font-weight: 300;
+}
+.restaurant .restaurantcontent .restauranttext .tagline{
+    border: none;
+    background-color: #d70f64;
+    color: #fff;
+    padding: 1px 15px;
+    position: absolute;
+    top: 18px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.restaurantimg:nth-child(2){
+    background-image: url(./images/flgh-listing.jpg);
+}
+
+footer{
+    width: 100%;
+    padding: 20px 10%;
+    margin-top: 22%;
+}
+footer .aboutfp h2{
+    font-size: 2.0em;
+    font-weight: 700;
+}
+footer .aboutfp p{
+    font-size: 15px;
+    font-weight: 310;
+    color: rgb(87, 87, 87);
+}
+footer .whatsnew h2{
+    font-size: 2.0em;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+footer .whatsnew p{
+    font-size: 15px;
+    font-weight: 310;
+    color: rgb(46, 46, 46);
+    letter-spacing: -0.1px;
+}
+.border-bottom{
+    border-bottom: rgba(153, 153, 153, 0.1);
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+footer .faq h2{
+    font-size: 2.0em;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+footer .faq p{
+    line-height: 5px;
+    font-size: 15px;
+    font-weight: 310;
+}
+footer .footer .fimg{
+    background-image: url(./images/foodpanda_logo-silver.png);
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    opacity: 50%;
+}
+footer .footer{
+    width: 200px;
+    height: 100px;
+    color: #fff;
+}
+footer .footer .fsp:hover{
+    opacity: 100%;
+}
+footer .fa-facebook-f{
+    color: rgba(153, 153, 153, 0.973);
+    padding: 12% 20%;
+    border: 1px solid #999;
+    border-radius: 100%;
+    font-size: 25px;
+    position: absolute;
+    cursor: pointer;
+    right: 100%;
+}
+footer .fa-instagram{
+    color: #999;
+    padding: 12%;
+    border: 1px solid #999;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 25px;
+    float: right;
+}
+.footer{
+    position: relative;
+    opacity: 1;
+}
+.footer span{
+    position: absolute;
+    left: 600%;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    top: 35%;
+}
+footer .footer .fa-instagram{
+    color: #666;
+    border: 1px solid #666;
+    opacity: 30%;
+}
+footer .footer .fa-facebook-f{
+    color: #666;
+    border: 1px solid #666;
+    opacity: 30%;
+}
+footer .footer .fa-instagram:hover{
+    color: #d70f64;
+    border: 1px solid #d70f64;
+    opacity: 100%;
+}
+footer .footer .fa-facebook-f:hover{
+    color: #d70f64;
+    border: 1px solid #d70f64;
+    opacity: 100%;
+}

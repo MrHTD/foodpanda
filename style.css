@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'poppins' sans-serif;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    width: 200px;
+    height: 50px;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .headerbtn a{
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+}
+.headerbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .sp1{
+    font-size: 30px;
+    color: rgba(153, 153, 153, 0.2);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+header .headerbtn .fa-user-circle{
+    color: #d70f64;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+}
+.loginbtn{
+    font-size: 12px;
+    color: #000;
+}
+header .headerbtn .signupbtn{
+    color: #d70f64;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-image: url(./images/hero-home-pk.webp);
+    background-size: 60%;
+    background-position: 180%;
+    background-repeat: no-repeat;
+}
+.banner h2{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 2.7em;
+    color: #333;
+    font-weight: 300;
+}
+.banner .searchrestaurent{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 15px;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner .searchrestaurent .textbox{
+    padding: 15px 25px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    outline: none;
+}
+.banner .searchrestaurent .textbox:focus{
+    border: 1px solid #d70f64;
+}
+.banner .searchrestaurent .textbox::placeholder{
+    font-size: 1.1em;
+    color: rgb(148, 145, 145);
+    font-weight: 300;
+}
+.banner .searchrestaurent .bannerbtn button{
+    background-color: #d70f64;
+    padding: 20px 50px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.banner .searchrestaurent .bannerbtn span{
+    font-weight: 300;
+    color: #999;
+}
+.abouttitle{
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+.abouttitle::before{
+    content: "Partners";
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.2);
+    font-weight: 700;
+    z-index: -1;
+}
+.abouttitle h2{
+    font-weight: 200;
+    font-size: 1.8em;
+    z-index: 0;
+}
+.about{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/home-vendor-pk.webp);
+    position: relative;
+}
+.about .aboutcontent{
+    width: 39%;
+    background-color: #fff;
+    padding: 18px 30px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,20%);
+}
+.about .aboutcontent h2{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.about .aboutcontent p{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 200;
+    color: #555;
+}
+.about .aboutcontent .aboutbtn{
+    padding: 10px 60px;
+    border: none;
+    font-weight: 600;
+    background-color: #d70f64;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    margin-top: 5%;
+}
+.citytitle{
+    width: 50%;
+    text-align: center;
+    margin-top: 300px;
+    position: relative;
+}
+.citytitle::before{
+    content: "Cities";
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    display: flex;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.2);
+    font-weight: 700;
+    z-index: -1;
+}
+.citytitle h2{
+    font-weight: 200;
+    font-size: 1.8em;
+    z-index: 0;
+}
+.city{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.city .citycontent{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.city .citycontent .citycard{
+    width: 220px;
+    height: 250px;
+    background-image: url(./images/Karachi.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+}
+.fa-arrow-right{
+    color: #fff;
+    background-color: #d70f64;
+    padding: 17px 18px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 167px;
+    top: 196px;
+    opacity: 0;
+}
+.city .citycontent .citycard:hover .fa-arrow-right{
+    opacity: 100%;
+}
+.city .citycontent .citycard:nth-child(2){
+    background-image: url(./images/lahore.webp);
+}
+.city .citycontent .citycard:nth-child(3){
+    background-image: url(./images/Islamabad.webp);
+}
+.city .citycontent .citycard:nth-child(4){
+    background-image: url(./images/Rawalpindi.webp);
+}
+.city .citycontent .citycard:nth-child(5){
+    background-image: url(./images/faisalabad.webp);
+}
+.city .citycontent .citycard:nth-child(6){
+    background-image: url(./images/lahore.webp);
+}
+.city .citycontent .citycard:nth-child(7){
+    background-image: url(./images/lahore.webp);
+}
+.city .citycontent .citycard h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.city .citycontent .citycard .alphabet{
+    position: absolute;
+    top: 55px;
+    font-size: 12rem;
+    left: -15px;
+    color: #d70f64;
+    font-weight: 700;
+    z-index: 1;
+    opacity: 0;
+}
+.city .citycontent .citycard:hover .alphabet{
+    opacity: 0.5;
+}
+.apptitle{
+    width: 50%;
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+}
+.apptitle::before{
+    content: "App";
+    position: absolute;
+    top: -160px;
+    left: 150px;
+    font-size: 12em;
+    color: rgba(153, 153, 153, 0.2);
+    font-weight: 700;
+    z-index: -1;
+}
+.apptitle h2{
+    font-weight: 200;
+    font-size: 1.8em;
+    z-index: 0;
+    position: relative;
+    left: -115px;
+}
+.app{
+    width: 100%;
+    height: 350px;
+    background-color: #d70f64;
+    margin-bottom: 12%;
+    position: relative;
+}
+.app .appcontent{
+    position: absolute;
+    color: #fff;
+    width: 50%;
+    top: 20%;
+    left: 10%;
+}
+.app .appcontent h2{
+    font-weight: 300;
+}
+.app .appcontent p{
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+}
+.appbtn{
+    width: 50%;
+    position: absolute;
+    top: 62%;
+    left: 10%;
+}
+.appbtn .appstore img{
+    width: 130px;
+    height: 40px;
+    border: 0.5px solid white;
+    border-radius: 4px;
+}
+.appbtn .playstore img{
+    width: 130px;
+    height: 52px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.appbtn .huastore img{
+    width: 130px;
+    height: 40px;
+}
+.app .appimg{
+    width: 670px;
+    height: 610px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/home-foodpanda-apps.png);
+    position: absolute;
+    left: 55%;
+    top: -28%;
+}
+.bussinesstitle{
+    width: 50%;
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+}
+.bussinesstitle::before{
+    content: "Office";
+    position: absolute;
+    top: -135px;
+    left: 150px;
+    font-size: 10em;
+    color: rgba(153, 153, 153, 0.1);
+    font-weight: 700;
+    z-index: -1;
+}
+.bussinesstitle h2{
+    font-weight: 200;
+    font-size: 1.8em;
+    z-index: 0;
+    position: relative;
+    left: -80px;
+    top: -15px;
+}
+.bussiness{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/home-corporate-pk.webp);
+    position: relative;
+}
+.bussiness .bussinesscontent{
+    width: 40%;
+    background-color: #fff;
+    padding: 30px 30px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,20%);
+}
+.bussiness .bussinesscontent h2{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.bussiness .bussinesscontent p{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 200;
+    color: #555;
+}
+.bussiness .bussinesscontent .aboutbtn{
+    padding: 10px 70px;
+    border: none;
+    font-weight: 550;
+    background-color: #d70f64;
+    border-radius: 5px;
+    color: #fff;
+    float: right;
+    margin-top: 5%;
+}
+footer{
+    width: 100%;
+    padding: 20px 10%;
+    margin-top: 10%;
+}
+footer .aboutfp h2{
+    font-size: 2.1em;
+    font-weight: 700;
+}
+footer .aboutfp p{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(87, 87, 87);
+}
+footer .whatsnew h2{
+    font-size: 2.1em;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+footer .whatsnew p{
+    line-height: 10.2px;
+    font-size: 17px;
+    font-weight: 300;
+    color: rgb(46, 46, 46);
+    letter-spacing: -0.1px;
+}
+footer .whatsnew p span{
+    color: #d70f64;
+}
+.border-bottom{
+    border-bottom: rgba(153, 153, 153, 0.1);
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+footer .faq h2{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+footer .faq h3{
+    font-size: 1.2em;
+    padding: 10px 0;
+    font-weight: 700;
+}
+footer .faq p{
+    padding: 8px 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+footer .footer{
+    background-image: url(./images/foodpanda_logo-silver.png);
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+footer .fa-facebook-f{
+    color: #999;
+    padding: 12% 20%;
+    border: 1px solid #999;
+    border-radius: 100%;
+    font-size: 25px;
+    position: absolute;
+    cursor: pointer;
+    right: 100%;
+}
+footer .fa-instagram{
+    color: #999;
+    padding: 12%;
+    border: 1px solid #999;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 25px;
+    float: right;
+}
+.footer{
+    position: relative;
+    opacity: 1;
+}
+.footer span{
+    position: absolute;
+    left: 600%;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    top: 35%;
+}
+.footer .fa-instagram:hover{
+    color: #d70f64;
+    border: 1px solid #d70f64;
+}
+.footer .fa-facebook-f:hover{
+    color: #d70f64;
+    border: 1px solid #d70f64;
+}
